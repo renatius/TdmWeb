@@ -1,0 +1,108 @@
+#content {
+	overflow: auto;
+	width: 100%;
+	margin: 1em 0 0 0;
+}
+
+#content #main_content {
+	float: right;
+	width: 175px;
+	padding: 0 0 1em 0;
+}
+
+#sitenews {
+	float: left;
+	width: 40em;
+	color: #444;
+	background-color: white;	
+}
+
+#main_content #portrait img {
+	border: 1px solid #aaa;
+	margin: 0;
+	padding: 0;
+}
+
+#main_content #social {
+	margin-top: 1em;
+}
+
+#main_content #linkedin,
+#main_content #resume {
+	float: left;
+	margin: 0 .5em .5em 0;
+}
+
+#main_content #twitter {
+	margin-top: .4em;
+}
+
+#main_content #csm_logo {
+	margin-top: .4em;
+}
+
+#main_content #bio {
+	font-family: Tahoma, Verdana, sans-serif;
+	font-size: 80%;
+}
+
+#main_content #bio p {
+	width: 174px;
+	margin-top: 1em;
+	line-height: 1.25em;
+	text-align: justify;
+}
+
+#sitenews h1 {
+	color: #4682b4;
+	background-color: transparent;
+	margin-left: .75em;
+}
+
+#twitterbox,
+#postbox {
+	border: 1px solid #aaa;
+	color: #444;
+	background-color: #f3f3f3;
+	padding: 1em;
+	margin-bottom: 1em;	
+}
+
+#twtr-widget-1 {
+	margin: 1em;
+}
+
+.rss-box {
+	margin: 1em 0 1em 0;
+}
+
+.rss-item {
+	margin: .5em 0 .5em 0;
+}
+
+.rss-item a {
+	color: #4682b4;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+.rss-date {
+	margin: 1em 0 0 0;
+	font-size: 90%;
+	font-style: italic;	
+}
+
+
+div.twtr-hd .twtr-profile-img-anchor,
+div.twtr-hd h3,
+div.twtr-hd h4
+{
+	display: none;
+}
+
+.no-js #twitterbox,
+.no-js #postbox {
+    display: none;
+}
+
+

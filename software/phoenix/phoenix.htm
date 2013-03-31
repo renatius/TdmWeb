@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Phoenix EMBL Parser</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="description" content="Phoenix is a non validating parser for EMBL flat files." />
+	<meta name="keywords" content="information technology, software development, C++, EMBL parser" />
+	<meta name="robots" content="all" />
+	<meta name="revisit-after" content="10 days" />
+	<meta name="copyright" content="Copyright Renato Mancuso 2004-2009" />
+	<meta name="language" content="en" />
+	<meta name="rating" content="general" />	
+	
+	
+	<link rel="stylesheet" type="text/css" href="../../styles/site.css" />	
+	<link rel="stylesheet" type="text/css" href="../../styles/software.css" />
+	
+	
+	<style type="text/css">
+	<!--
+	.Notice {
+	border: 4px dotted #D2691E;
+	background: #FFFACD;
+	color: Black;
+	padding: 1em;
+	font: "Tahoma Small Cap", serif;
+	font-style: oblique;
+	font-variant: small-caps;
+	font-weight: bold;
+	font-size: large;
+	width: 60%;
+   } 
+	
+		-->
+	</style>
+</head>
+
+<body>
+
+
+<!-- Top Menu -->
+	
+<div id="topMenu">
+
+	<a href="../../index.htm">Home</a>
+	
+	<span>&nbsp;|&nbsp;</span>
+	
+	<a href="../../software.htm">My Software</a>
+
+	<span>&nbsp;|&nbsp;</span>
+	
+	<a href="../../links.htm">Links</a>
+		
+</div> 
+
+<!-- Top Menu End -->
+
+
+
+<!-- Locator Strip -->
+
+<div id="locatorStrip">
+
+	You are here: 
+
+	<a href="../../index.htm">Home</a>
+	
+	&gt;
+	
+	<a href="../../software.htm">Software</a>
+	
+	&gt;
+	
+	<a href="phoenix.htm" id="currentLocation">Phoenix EMBL Parser</a>
+	
+	
+</div>
+
+<!-- Locator Strip End -->
+
+
+
+<!-- Link Bar -->
+
+<div id="linkBar">
+
+
+	<p>Nucleotide Sequence Databases
+	
+		<a href="http://www.ebi.ac.uk/embl" >EMBL-Bank</a>
+		<a href="http://www.ncbi.nlm.nih.gov/Genbank/index.html" >GenBank</a>
+		<a href="http://www.ddbj.nig.ac.jp/" >DNA Database of Japan</a>		
+		<a href="http://www.ebi.ac.uk/cgi-bin/emblfetch" >EMBL WWW dbfetch</a>
+
+	</p>			
+	
+	<p>EMBL-Bank Documentation
+	
+		<a href="http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html" >EMBL User Manual</a>
+		<a href="http://www.ebi.ac.uk/embl/Documentation/FT_definitions/feature_table.html" >Feature Table Document</a>
+
+	</p>
+	
+	<p>Phoenix
+	
+		<a href="phoenix_readme.htm">Phoenix Parser README</a>
+	
+	</p>
+	
+</div>
+
+<!-- Link Bar -->
+
+	
+	
+<!-- Content -->	
+	
+<div id="content">
+	
+<h1>Phoenix EMBL Parser</h1>
+
+<div class="Notice">
+October 10, 2006: the Phoenix project has moved to bioinformatics.org. Please follow this 
+<a href="http://www.bioinformatics.org/phoenix">link</a> 
+to go to the new Phoenix website.
+</div>
+
+<h2>Introduction</h2>
+
+<p>Phoenix is a C++ parser for EMBL-Bank flat files.</p>
+
+<p><a href="http://www.ebi.ac.uk/embl">EMBL-Bank</a> 
+constitutes Europe's primary nucleotide sequence resource. 
+Main sources for DNA and RNA sequences are direct submissions from 
+individual researchers, genome sequencing projects and patent applications.</p>
+
+<p>The database is produced in an 
+<a href="http://www.ebi.ac.uk/embl/Contact/collaboration.html">international collaboration</a> 
+with 
+<a href="http://www.ncbi.nlm.nih.gov/Genbank/index.html">GenBank</a> 
+(USA) and the 
+<a href="http://www.ddbj.nig.ac.jp/">DNA Database of Japan</a> 
+(DDBJ). 
+Each of the three groups collects a portion of the total 
+sequence data reported worldwide, and all new and updated 
+database entries are exchanged between the groups on a daily basis.</p>
+
+<p>The format of EMBL-Bank flat files is described in the 
+<a href="http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html">
+EMBL User Manual</a>, while the format of the EMBL Feature Table element is 
+described in the
+<a href="http://www.ebi.ac.uk/embl/Documentation/FT_definitions/feature_table.html">
+Feature Table Definition document.</a></p>
+
+
+<h2>The Parser</h2>
+
+<p>Phoenix recognizes all of the public EMBL-Bank line types including the 
+line types used in 
+<a href="http://www.ebi.ac.uk/embl/Documentation/third_party_annotation_dataset.html">
+TPA</a> and CON (constructed) entries.</p>
+
+<p>Phoenix also performs complete and reliable parsing of EMBL Feature Table 
+location strings, and is able to correctly disambiguate
+between the various recognized publication types.</p>
+
+
+<h2>Using Phoenix with non C++ programs</h2>
+
+<p>Phoenix is a C++ parser, so you cannot directly use Phoenix in Perl or Java programs.</p>
+
+<p>You can however use Phoenix to convert EMBL flat files into some 
+suitable XML format and then read the resulting XML files 
+using whatever XML parser is available in your language.</p>
+
+<p>Two of Phoenix sample applications show how Phoenix can be used to convert 
+EMBL-Bank flat files into some kind of XML format.</p>
+
+
+<h2>Downloads</h2>
+
+<h3><a href="../../downloads/phoenix_1_0_0_0.zip">Phoenix EMBL Parser 1.0 - C++ sources (Windows)</a></h3> 
+<h4>MSVC .NET 2003</h4>
+<span class="property">format:</span><span class="value">WinZip</span>
+<span class="property">size:</span><span class="value">1,256 KB (1,22 MB)</span>
+<span class="property">last modified:</span><span class="value">10-Oct-2006</span>
+
+<h3><a href="../../downloads/phoenix_0_82.zip">Phoenix EMBL Parser 0.82 - C++ sources (Windows)</a></h3> 
+<h4>MSVC .NET 2003</h4>
+<span class="property">format:</span><span class="value">WinZip</span>
+<span class="property">size:</span><span class="value">1,211 KB (1,18 MB)</span>
+<span class="property">last modified:</span><span class="value">12-Jun-2005</span>
+
+<h3><a href="../../downloads/phoenix_0_82.tar.gz">Phoenix EMBL Parser 0.82 - C++ sources (UNIX) </a></h3> 
+<h4>g++ 3.3 (GNU make)</h4>
+<span class="property">format:</span><span class="value">tar/gzip</span>
+<span class="property">size:</span><span class="value">949 KB</span>
+<span class="property">last modified:</span><span class="value">12-Jun-2005</span>
+	
+</div>
+
+<!-- Content End -->	
+
+
+
+<!-- Footer -->
+
+<div id="footer">
+
+	<div>Copyright &copy; 2004-2010 Renato Mancuso</div>
+
+</div>
+
+<!-- Footer End -->
+
+
+
+</body>
+</html>

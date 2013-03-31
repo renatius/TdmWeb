@@ -1,0 +1,50 @@
+#page header h1 {
+	font-size: 180%;
+	color: #4682b4;
+	background-color: white;
+}
+
+#page header nav {
+	margin-top: 1em;
+	border: 1px solid  #d5d5d5;
+	color: #333;
+	background-color: #f3f3f3;
+	padding: .25em;
+}
+
+#page header nav ul {
+	display: inline;
+	list-style-type: none;
+	margin-left: 0;	
+}
+
+#page header nav li {
+	display: inline;	
+}
+
+#page header nav a {
+	display: inline-block;
+	text-decoration: none;
+	color: #4682b4;
+	background-color: #f3f3f3;
+	font-weight: bold;
+	padding: .5em;	
+}
+
+#page header nav a:hover {
+	color: #111;
+	background-color: #ddd;
+}
+
+#page header nav a.current {
+	cursor: text;
+	color: #4682b4;
+	background-color: #f3f3f3;
+    text-decoration: underline;	
+}
+
+#page header nav a.current:hover {
+	color: #4682b4;
+	background-color: #f3f3f3;
+}
+

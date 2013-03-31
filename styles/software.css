@@ -1,0 +1,39 @@
+div#content h3 {
+	color: Black;
+	font-size: 115%;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	margin-bottom: 0.2em;
+	margin-top: 1.4em;
+}
+
+div#content h3 a {
+	font-variant: small-caps;
+}
+
+div#content h4 {
+	color: #A0522D;
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+	font-size: 85%;
+	font-weight: normal;
+	margin-top: 0;
+	margin-bottom: 0.1em;
+	margin-left: 2em;
+}
+
+div#content span.property {
+	color: Black;
+	font-weight: bold;
+	margin-top: 0;
+	margin-bottom: 0.1em;
+	margin-left: 2em;
+}
+
+div#content span.value {
+	margin-left: .5em;
+	font-weight: normal;
+	font-size: 100%;
+}
+
+div#content li {
+	margin-bottom: 1em;
+}

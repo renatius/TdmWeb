@@ -1,0 +1,110 @@
+body {
+	color: #111;
+	background-color: white;
+	font-family: Cambria, Georgia, serif;
+	font-size: 90%;
+	margin: 0;
+	padding: 0;
+}
+
+#page {
+	width: 100%;
+	padding: 0;
+	border: 0;
+}
+
+.boxshadow .box-shadow { -webkit-box-shadow: 0 0 0 white; -moz-box-shadow: 0 0 0 white; box-shadow: 0 0 0 white; }
+
+
+#content {
+	width: 100%;
+	padding: 1em;
+}
+
+/* section defaults */
+section {
+	margin-bottom: 1em;
+	line-height: 1.5em;
+}
+
+section h1 {
+	color: #4682b4;
+	background-color: transparent;
+	font-weight: normal;
+	border-bottom: 1px solid #4682b4;
+	margin-bottom: .25em;
+	font-size: 110%;
+}
+
+section ul {
+	list-style-type: disc;
+	margin-left: 2em;
+}
+
+section a {
+	color: #111;
+	background-color: white;
+	text-decoration: none;	
+	border-bottom: 1px dashed #ccc;
+}
+
+#contact_info {
+	text-align: center;
+	line-height: 1.1em;
+}
+
+#contact_info a {
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #4682b4;
+	background-color: transparent;
+	border: 0;
+}
+
+#contact_info a.email {
+	font-style: normal;
+	font-weight: normal;
+	text-transform: lowercase;	
+}
+
+#contact_info .street-address {
+	display: block;
+}
+
+#education {
+	line-height: 1.25em;	
+}
+
+#education .degree-info,
+#work_experience .job-info,
+#certifications .certification-info {
+	font-weight: bold;
+}
+
+#education .university-info,
+#work_experience .employer-info {
+	font-weight: normal;
+}
+
+
+#education .degree-completion-date,
+#work_experience .duration,
+#certifications .certification-date
+{
+    float: none;
+    display: block;
+    color: #4682b4;
+    background-color: white;
+    font-style: normal;
+    font-weight: bold;
+}
+
+#education .university-info {
+	margin: 0 0 .75em 0;
+}
+
+#work_experience .employer-info {
+	margin: 0 0 .75em 0;
+}
+

@@ -1,0 +1,18 @@
+#mainList {
+	list-style: upper-roman;
+	font-variant: small-caps;
+	color: #2D429F;
+	font-weight: bold;
+}
+
+ul#mainList a {
+	font-variant: normal;
+	font-weight: normal;
+	color: black;
+	text-decoration: none;
+}
+
+ul#mainList a:hover {
+	color: #2D429F;
+	text-decoration: underline;	
+}

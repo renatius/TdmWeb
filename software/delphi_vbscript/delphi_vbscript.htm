@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>VBScript RegExp Classes Wrapper for Delphi 7</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="description" content="This is a Delphi 7 unit that provides type-safe access to the Microsoft VBScript 5.5 RegExp Automation Classes." />
+	<meta name="keywords" content="information technology, software development, regex, regular expression, PCRE, Delphi, C++, C#, .NET, VBScript" />
+	<meta name="robots" content="all" />
+	<meta name="revisit-after" content="10 days" />
+	<meta name="copyright" content="Copyright Renato Mancuso 2004-2010" />
+	<meta name="language" content="en" />
+	<meta name="rating" content="general" />	
+
+	
+	<link rel="stylesheet" type="text/css" href="../../styles/site.css" />	
+	<link rel="stylesheet" type="text/css" href="../../styles/software.css" />	
+</head>
+
+<body>
+
+
+<!-- Top Menu -->
+	
+<div id="topMenu">
+	
+	<a href="../../index.htm">Home</a>
+	
+	<span>&nbsp;|&nbsp;</span>
+	
+	<a href="../../software.htm">My Software</a>
+
+	<span>&nbsp;|&nbsp;</span>
+	
+	<a href="../../links.htm">Links</a>
+
+</div> 
+
+<!-- Top Menu End -->
+
+
+
+<!-- Locator Strip -->
+
+<div id="locatorStrip">
+
+	You are here:
+
+	<a href="../../index.htm">Home</a>
+	
+	&gt;
+	
+	<a href="../../software.htm">Software</a>
+	
+	&gt;
+	
+	<a href="delphi_vbscript.htm" id="currentLocation">VBScript RegExp Wrapper for Delphi 7</a>
+	
+</div>
+
+<!-- Locator Strip End -->
+
+
+
+<!-- Link Bar -->
+
+<div id="linkBar">
+
+	<p>MSDN Documentation
+		
+		<a href="http://msdn.microsoft.com/en-us/library/kxt24tyh(VS.85).aspx" >
+		Regular Expression Object Properties and Methods
+		</a>
+		
+		<a href="http://msdn.microsoft.com/en-us/library/ms974570.aspx" >
+		Microsoft Beefs Up VBScript with Regular Expressions
+		</a>
+	
+	</p>
+
+
+	<p>Related Software
+					
+		<a href="../../software/dpcre/dpcre.htm">PCRE Wrapper for Delphi</a>
+		<a href="../../software/pcreworkbench/pcreworkbench.htm">PCRE Workbench</a>	
+	
+	</p>			
+	
+</div>
+
+<!-- Link Bar -->
+
+	
+	
+<!-- Content -->	
+	
+<div id="content">
+	
+<h1>Delphi 7 Wrapper for the Microsoft VBScript 5.5 RegExp Classes</h1>	
+	
+<p>
+This is a Delphi 7 unit that provides type-safe access to the 
+Microsoft VBScript 5.5 RegExp Automation Classes.</p>	
+
+<p>
+The Microsoft VBScript 5.5 RegExp Automation Classes can be imported 
+and used directly in Delphi programs by using Delphi 
+Import Type Library command 
+(the type library to look for is called "Microsoft VBScript Regular Expressions 5.5").</p>
+
+<p>
+However due to the fact that the RexExp Automation Classes have been designed for
+use in weakly typed scripting languages, the resulting type library is far from ideal
+from the perspective of a strongly typed language like Delphi:</p>
+
+<ol>
+	<li>
+		The VBScript RegExp Classes refer to each other using raw Dispatch 
+		interfaces. This forces Delphi programs to either manipulate them using 
+		Variants (and risk calling the wrong methods) or to continually have 
+		to cast them to the real interface. In both cases errors will only
+		be caught at runtime when in general it is too late...
+	</li>	
+	<li>		
+		All errors are returned via numerical HRESULTs. As far as I have been
+		able to see no one of the coclasses supports COM rich errors via 
+		ISupportsErrorInfo, so there is no way to get a textual description 
+		of the returned error from the classes themselves.
+		Luckily the numerical HRESULT values are documented in MSDN.
+	</li>
+
+</ol>
+
+<p>For all these reasons I have found more convenient to encapsulate
+access to the RegExp classes using proxy interfaces. This way it is
+in fact possible to both enforce type safe access and translate
+COM errors to Delphi exceptions.</p>
+
+<h2>Downloads</h2>
+
+<h3><a href="../../downloads/vbscriptregex.zip">Delphi Wrapper for the Microsoft VBScript 5.5 RegExp Library</a></h3>
+<h4>Delphi 7 Unit (.pas)</h4>
+<span class="property">format:</span><span class="value">WinZip</span>
+<span class="property">size:</span><span class="value">5 KB</span>
+<span class="property">last modified:</span><span class="value">03-Nov-2003</span>
+	
+</div>
+
+<!-- Content End -->	
+
+
+
+<!-- Footer -->
+
+<div id="footer">
+
+	<div>Copyright &copy; 2004-2010 Renato Mancuso</div>
+
+</div>
+
+<!-- Footer End -->
+
+
+
+</body>
+</html>

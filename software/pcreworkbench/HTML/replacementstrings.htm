@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html>
+<head>
+   <title>Replacement Strings</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="">
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+  <script language="JavaScript">
+       <!-- 
+           if(top.frames.length==0) top.location.href='index.html?replacementstrings.htm'
+       //-->
+  </script>
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#8080FF">
+  <tr>
+    <td align="left">
+      
+<span style="font-family:Tahoma; font-size:14pt; color:#000000"><span style="font-family:Tahoma; font-size:14pt; color:#FFFFFF"><b>Replacement Strings
+<br>
+</b></span></span>
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="javaScript:parent.reDisplay('1.7',1,0)">Previous</a>&nbsp;
+     <a href="javaScript:parent.reDisplay('1.1',1,0)">Top</a>&nbsp;
+     <a href="javaScript:parent.reDisplay('2.1',1,0)">Next</a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+
+<span style="font-family:Helvetica,Arial; font-size:1pt; color:#000000"><hr><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+<div align="center"></span><span style="font-family:Tahoma; font-size:10pt; color:#000000"><span style="font-family:Tahoma; font-size:10pt; color:#000080"><b>NOTE: replace is not supported natively by PCRE: it is instead a feature provided by the Delphi wrappers.
+<br>
+</b></span></span><span style="font-family:Times New Roman; font-size:12pt; color:#000000">
+<br>
+</div></span><span style="font-family:Times New Roman; font-size:1pt; color:#000000"><hr></span><span style="font-family:Times New Roman; font-size:12pt; color:#000000">
+<br>
+</span><span style="font-family:Tahoma; font-size:10pt; color:#000000">Substitutions are the only special constructs recognized in a replacement pattern. Substitutions variables are always prefixed by a single $ character followed by either a number or a special meta character.
+<br>
+</span><span style="font-family:Times New Roman; font-size:12pt; color:#000000">
+<br>
+</span><span style="font-family:Tahoma; font-size:10pt; color:#000000">The following table shows how to define replacement patterns.</span><span style="font-family:Times New Roman; font-size:12pt; color:#000000">
+<br>
+</span><span style="font-family:Tahoma; font-size:10pt; color:#000000"><b>
+<br>
+</b></span></span><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="14"></td><td><span style="font-family:Tahoma; font-size:10pt; color:#000000"><span style="font-family:Times New Roman; font-size:12pt; color:#000000"><table border="0" cellpadding="0" cellspacing="0"><tr><td align="left" valign="top" width="102">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000"><b>Character</b>
+<br>
+</span></td><td align="left" valign="top" width="442">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000"><b>Meaning</b>
+<br>
+</span></td><td align="left" valign="top" width="254">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="102">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">$123
+<br>
+</span></td><td align="left" valign="top" width="442">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">Substitutes the last substring matched by group number 123 (decimal).
+<br>
+</span></td><td align="left" valign="top" width="254">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="102">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">${name}
+<br>
+</span></td><td align="left" valign="top" width="442">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">Substitutes the last substring matched by named group 'name'
+<br>
+</span></td><td align="left" valign="top" width="254">
+<span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="102">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">$$
+<br>
+</span></td><td align="left" valign="top" width="442">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">Substitutes a single "<b>$</b>" literal.
+<br>
+</span></td><td align="left" valign="top" width="254">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="102">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">$&amp;
+<br>
+</span></td><td align="left" valign="top" width="442">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">Substitutes a copy of the entire match itself.
+<br>
+</span></td><td align="left" valign="top" width="254">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="102">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">$`
+<br>
+</span></td><td align="left" valign="top" width="442">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">Substitutes all the text of the input string before the match.
+<br>
+</span></td><td align="left" valign="top" width="254">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="102">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">$'
+<br>
+</span></td><td align="left" valign="top" width="442">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">Substitutes all the text of the input string after the match.
+<br>
+</span></td><td align="left" valign="top" width="254">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="102">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">$+
+<br>
+</span></td><td align="left" valign="top" width="442">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">Substitutes the last group captured.
+<br>
+</span></td><td align="left" valign="top" width="254">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">
+<br>
+</span></td></tr><tr><td align="left" valign="top" width="102">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">$_
+<br>
+</span></td><td align="left" valign="top" width="442">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">Substitutes the entire input string
+<br>
+</span></td><td align="left" valign="top" width="254">
+<span style="font-family:Tahoma; font-size:10pt; color:#000000">
+<br>
+</span></td></tr></table>
+&nbsp;<br>
+</span></span></td></tr></table><table width="100%" border="0" cellpadding="0" cellspacing="0"><tr valign="top"><td width="14"></td><td><span style="font-family:Times New Roman; font-size:12pt; color:#000000"></span></td></tr></table><span style="font-family:Times New Roman; font-size:12pt; color:#000000"><span style="font-family:Tahoma; font-size:10pt; color:#000000">
+<br>
+When using a substitutions variable like $n, an exception is raised if n &gt; of the index of the last capturing group.</span><span style="font-family:Times New Roman; font-size:12pt; color:#000000">
+<br>
+</span><span style="font-family:Tahoma; font-size:10pt; color:#000000">
+<br>
+This is different from the behaviour of .NET Regex classes, which instead simply proceed to consider the variable as a literal value. If you want to really introduce a literal '$' followed by a numerical value use a double dollar character.</span><span style="font-family:Times New Roman; font-size:12pt; color:#000000">
+<br>
+</span><span style="font-family:Helvetica,Arial; font-size:10pt; color:#000000">
+<br>
+</span></span>
+
+</body>
+</html>

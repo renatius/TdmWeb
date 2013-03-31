@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>Phoenix EMBL Parser README</title>
+	<link rel="stylesheet" type="text/css" href="../../styles/site.css" />	
+	<link rel="stylesheet" type="text/css" href="../../styles/software.css" />
+
+</head>
+
+<body>
+
+
+<!-- Top Menu -->
+	
+<div id="topMenu">
+	
+	<a href="../../index.htm">Home</a>
+	
+	<span>&nbsp;|&nbsp;</span>
+	
+	<a href="../../software.htm">My Software</a>
+
+	<span>&nbsp;|&nbsp;</span>
+	
+	<a href="http://renatomancuso.blogspot.com/">My Blog</a>
+
+	<span>&nbsp;|&nbsp;</span>
+	
+	<a href="../../links.htm">Links</a>
+		
+</div> 
+
+<!-- Top Menu End -->
+
+
+
+<!-- Locator Strip -->
+
+<div id="locatorStrip">
+
+	You are here: 
+
+	<a href="../../index.htm">Home</a>
+	
+	&gt;
+	
+	<a href="../../software.htm">Software</a>
+	
+	&gt;
+	
+	<a href="phoenix.htm">Phoenix EMBL Parser</a>
+
+	&gt;
+	
+	<a href="phoenix_readme.htm" id="currentLocation">Phoenix EMBL Parser README</a>
+	
+	
+</div>
+
+<!-- Locator Strip End -->
+
+<!-- Content -->	
+	
+<div id="content">
+	
+<h1>Phoenix EMBL Parser README</h1>
+
+<pre>
+INTRODUCTION
+------------
+
+Phoenix is a non-validating parser for the EMBL flat-file format. 
+
+The format of EMBL flat files is described in the EMBL User Manual, available at:
+ 
+	http://www.ebi.ac.uk/embl/Documentation/User_manual/usrman.html
+ 
+and the format of the Feature Table element is further described in the
+Feature Table Definition document, available at: 
+
+	http://www.ebi.ac.uk/embl/Documentation/FT_definitions/feature_table.html
+
+To retrieve EMBL flat file records you can use either EBI dbfetch: 
+
+	http://www.ebi.ac.uk/cgi-bin/emblfetch
+	
+or consult the EMBL information pages at:
+
+	http://www.ebi.ac.uk/embl/Access/index.html
+
+In the context of Phoenix the term non-validating means that the parser
+is only concerned with the file being well-formed and does not attempt 
+to perform any semantic validation of the content of the file.
+
+For this very reason Phoenix is ideal for all those people who only want to
+extract information from the publicly available flat files.
+
+
+VERSION
+-------
+
+This is version 0.8 of Phoenix. 
+
+
+WHAT IS PROVIDED
+----------------
+
+In order to be portable across platforms the Phoenix parser is built as
+a static library. 
+
+The sources of the Phoenix parser can be found under 
+
+	src\libphoenix
+
+As a user of Phoenix you will typically only need to #include &lt;Phoenix.hpp&gt;
+
+
+PHOENIX SAMPLE APPLICATIONS
+---------------------------
+
+The following sample applications are provided:
+
+	1) checkff
+	2) showevents
+	3) Showxml
+	4) ff2xml
+	5) efmt
+
+checkff is the minimal Phoenix application. It just reads the input file and outputs
+errors and warnings if the file is not well-formed.
+
+showevents hooks into the Phoenix parser and displays on screen all the events that 
+the parser generates while reading an input file. ShowEvents is particularly useful
+to get an idea of what is happening under the hood while Phoenix parses a file.
+
+Showxml and ff2xml show how Phoenix can be used to write a flat-file to XML conversion
+utility. 
+
+efmt is a Unix-style pipe that can be used to remove the artifacts produced by 
+text editors (even though EMBL flat files are text files, they do have some 
+unusual requirements that conflict with the way most text editor save files). 
+
+
+DISCLAIMER
+-----------
+
+If you want to contact me about bugs in Phoenix please send an e-mail to:
+
+	phoenix@renatomancuso.com
+
+Palermo, 7 June 2005
+
+Renato Mancuso
+</pre>
+
+</div>
+
+<!-- Content End -->	
+
+
+
+<!-- Footer -->
+
+<div id="footer">
+
+	<div>Copyright &copy; 2004-2010 Renato Mancuso</div>
+
+</div>
+
+<!-- Footer End -->
+
+
+
+</body>
+</html>

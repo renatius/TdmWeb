@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /aspnet_client/
+Disallow: /cgi-bin/
+Disallow: /downloads/
+Disallow: /styles/
+Disallow: /js/
+Disallow: /css/
+Disallow: /img/
+

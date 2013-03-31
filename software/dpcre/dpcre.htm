@@ -1,0 +1,277 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<title>PCRE Wrapper for Delphi 7</title>
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+	<meta name="description" content="PCRE Wrapper for Delphi 7." />
+	<meta name="keywords" content="information technology, software development, regex, regular expression, PCRE, Delphi, C++, C#, .NET, VBScript" />
+	<meta name="robots" content="all" />
+	<meta name="revisit-after" content="10 days" />
+	<meta name="copyright" content="Copyright Renato Mancuso 2004-2010" />
+	<meta name="language" content="en" />
+	<meta name="rating" content="general" />	
+	
+	
+	<link rel="stylesheet" type="text/css" href="../../styles/site.css" />	
+	<link rel="stylesheet" type="text/css" href="../../styles/software.css" />
+	
+	<style type="text/css">
+	/*<![CDATA[*/
+	div#disclaimer {
+		color: #A0522D;
+		font-weight: bold;
+		border-top: 2px solid Black;
+		border-bottom: 2px solid Black;
+		padding-top: 1em;
+		padding-bottom: 1em;
+		padding-left: 1em;
+		padding-right: 1em;
+		margin-top: 1em;
+	}
+	
+	div#disclaimer a {
+		margin-left: 1em;
+	}
+	/*]]>*/
+	</style>
+	
+</head>
+
+<body>
+
+
+<!-- Top Menu -->
+	
+<div id="topMenu">
+	
+	<a href="../../index.htm">Home</a>
+	
+	<span>&nbsp;|&nbsp;</span>
+	
+	<a href="../../software.htm">My Software</a>
+
+	<span>&nbsp;|&nbsp;</span>
+	
+	<a href="../../links.htm">Links</a>
+		
+</div> 
+
+<!-- Top Menu End -->
+
+
+
+<!-- Locator Strip -->
+
+<div id="locatorStrip">
+
+	You are here:
+
+	<a href="../../index.htm">Home</a>
+	
+	&gt;
+	
+	<a href="../../software.htm">Software</a>
+	
+	&gt;
+	
+	<a href="dpcre.htm" id="currentLocation">PCRE Wrapper for Delphi</a>
+	
+	
+</div>
+
+<!-- Locator Strip End -->
+
+
+
+<!-- Link Bar -->
+
+<div id="linkBar">
+
+	<p>About PCRE
+		
+		<a href="http://www.pcre.org" >PCRE Official Web Site</a>
+		<a href="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/" >PCRE FTP Site</a>		
+	
+	</p>
+
+
+	<p>Related Software
+					
+		<a href="../../software/pcreworkbench/pcreworkbench.htm">PCRE Workbench</a>
+		<a href="../delphi_vbscript/delphi_vbscript.htm">VBScript RegExp Wrapper for Delphi</a>
+
+	</p>			
+	
+</div>
+
+<!-- Link Bar -->
+
+	
+	
+<!-- Content -->	
+	
+<div id="content">
+	
+<h1>PCRE Wrapper for Delphi 7</h1>	
+	
+<h2>Introduction</h2>	
+	
+<p>
+<strong><a href="http://www.pcre.org">PCRE</a></strong> 
+(Perl Compatible Regular Expressions) is a C library written by
+Philip Hazel of Cambridge University.</p>	
+
+<p>PCRE allows C and C++ programs to perform pattern matching using 
+Perl-style regular expressions.</p>
+
+<p>PCRE is written in ANSI C and is extremely portable (I have succesfully 
+compiled and used PCRE under Windows 2000, Windows XP and several 
+32-bit and 64-bit Unix operating systems).</p>
+
+<p>In order to make PCRE accessible from Delphi I have compiled PCRE as a
+DLL using MSVC.NET 2003. The C runtime has been statically linked to the DLL
+to make it completely self contained.</p>
+
+<p>A few modification of the original C sources are needed before 
+PCRE can be accessed by Delphi, mostly to allow access to exported 
+variables that the Delphi linker is not able to import.</p>
+
+<p>In agreement with PCRE licence the modified C sources of my 
+custom version of the PCRE DLL are provided below.</p>
+
+<h2>The Delphi Wrapper Classes</h2>
+
+<p>Direct access to the PCRE API from a Delphi program is provided by 
+the PCRE_DLL.pas import unit. Directly using the PCRE C API from Delphi 
+is however not for the faint of heart.</p>
+
+<p>For this reason together with the Delphi import unit I am also providing
+a set of Delphi classes and interfaces that provide an easy to use 
+object-oriented wrapper around the PCRE API.</p>
+
+<p>In addition to ease access to the underlying PCRE API, these wrapper classes
+also provide some functionality which is missing from the original
+PCRE API, like the possibilty to find all non-overlapping matches using a single method call, 
+split a string using a regular expression, and search-replace using
+placeholder variables like in Perl.</p>
+
+<p>The Delphi wrapper classes can be found in the PCRE.pas source file.</p>
+
+
+<h2>Disclaimer</h2>
+
+<div id="disclaimer">
+
+<br />
+These zip files contain custom versions of 
+PCRE 3.9, PCRE 4.5, PCRE 5.x and PCRE 6.x, 
+and they are neither the original 
+nor a complete distribution of PCRE.<br />
+To obtain the original PCRE distribution please go to the 
+original PCRE FTP site at:<br />
+<br />
+<a href="ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/">
+ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/</a><br />
+<br />
+or visit the pcre.org web site at:<br />
+<br />
+<a href="http://www.pcre.org">http://www.pcre.org</a><br />
+<br />
+</div>
+	
+<h2>Downloads</h2>	
+
+<h3><a href="../../downloads/dpcre67_dll.zip">PCRE 6.7 DLL</a></h3>
+<h4>Win 32 dll + Delphi 7 import unit + Delphi 7 wrapper</h4>
+<span class="property">format:</span><span class="value">WinZip</span> 
+<span class="property">size:</span><span class="value">226 KB</span>
+<span class="property">last modified:</span><span class="value">09-Feb-2008</span>
+ 
+<h3><a href="../../downloads/dpcre67_dll_src.zip">PCRE 6.7 DLL C Sources (with modifications for Delphi)</a></h3>
+<h4>MSVC .NET 2003 Solution</h4>
+<span class="property">format:</span><span class="value">WinZip</span>
+<span class="property">size:</span><span class="value">499 KB</span>
+<span class="property">last modified:</span><span class="value">27-Nov-2006</span>
+
+
+<h3><a href="../../downloads/dpcre61_dll.zip">PCRE 6.1 DLL</a></h3>
+<h4>Win 32 dll + Delphi 7 import unit + Delphi 7 wrapper</h4>
+<span class="property">format:</span><span class="value">WinZip</span> 
+<span class="property">size:</span><span class="value">267 KB</span>
+<span class="property">last modified:</span><span class="value">27-Aug-2005</span>
+ 
+<h3><a href="../../downloads/dpcre61_dll_src.zip">PCRE 6.1 DLL C Sources (with modifications for Delphi)</a></h3>
+<h4>MSVC .NET 2003 Solution</h4>
+<span class="property">format:</span><span class="value">WinZip</span>
+<span class="property">size:</span><span class="value">461 KB</span>
+<span class="property">last modified:</span><span class="value">27-Jun-2005</span>
+
+<h3><a href="../../downloads/dpcre50_dll.zip">PCRE 5.0 DLL</a></h3>
+<h4>Win 32 dll + Delphi 7 import unit + Delphi 7 wrapper</h4>
+<span class="property">format:</span><span class="value">WinZip</span> 
+<span class="property">size:</span><span class="value">206 KB</span>
+<span class="property">last modified:</span><span class="value">26-Oct-2004</span>
+ 
+<h3><a href="../../downloads/dpcre50_dll_src.zip">PCRE 5.0 DLL C Sources (with modifications for Delphi)</a></h3>
+<h4>MSVC .NET 2003 Solution</h4>
+<span class="property">format:</span><span class="value">WinZip</span>
+<span class="property">size:</span><span class="value">367 KB</span>
+<span class="property">last modified:</span><span class="value">26-Oct-2004</span>
+
+ 
+<h3><a href="../../downloads/dpcre45_dll.zip">PCRE 4.5 DLL</a></h3>
+<h4>Win 32 dll + Delphi 7 import unit + Delphi 7 wrapper</h4>
+<span class="property">format:</span><span class="value">WinZip</span> 
+<span class="property">size:</span><span class="value">140 KB</span>
+<span class="property">last modified:</span><span class="value">07-Mar-2004</span>
+
+ 
+ 
+<h3><a href="../../downloads/dpcre45_dll_src.zip">PCRE 4.5 DLL C Sources (with modifications for Delphi)</a></h3>
+<h4>MSVC .NET 2003 Solution</h4>
+<span class="property">format:</span><span class="value">WinZip</span>
+<span class="property">size:</span><span class="value">292 KB</span>
+<span class="property">last modified:</span><span class="value">11-Jul-2004</span>
+ 
+ 
+ 
+<h3><a href="../../downloads/dpcre39_dll.zip">PCRE 3.9 DLL</a></h3>
+<h4>Win 32 dll + Delphi 7 import unit + Delphi 7 wrapper classes</h4>
+<span class="property">format:</span><span class="value">WinZip</span>
+<span class="property">size:</span><span class="value">189 KB</span>
+<span class="property">last modified:</span><span class="value">06-Dec-2003</span>
+
+
+ 
+<h3><a href="../../downloads/dpcre39_dll_src.zip">PCRE 3.9 DLL C Sources (with modifications for Delphi)</a></h3>
+<h4>MSVC .NET 2002 Solution</h4>
+<span class="property">format:</span><span class="value">WinZip</span>
+<span class="property">size:</span><span class="value">190 KB</span>
+<span class="property">last modified:</span><span class="value">10-Mar-2003</span>
+ 
+
+	
+	
+</div>
+
+<!-- Content End -->	
+
+
+
+<!-- Footer -->
+
+<div id="footer">
+
+	<div>Copyright &copy; 2004-2010 Renato Mancuso</div>
+
+</div>
+
+<!-- Footer End -->
+
+
+
+</body>
+</html>

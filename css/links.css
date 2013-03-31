@@ -1,0 +1,98 @@
+#content {
+	margin: .5em 0 0 0;
+	overflow: auto;
+	width: 100%;
+	line-height: 1.5em;	
+}
+
+#content h1 {
+	margin-bottom: .5em;
+}
+
+#links {
+	margin: .5em 0 1em 0em;
+	padding: 1em;
+}
+
+#blogs {
+	margin: .5em 0 1em 0;
+	padding: 1em;
+}
+
+#links {
+	float: left;
+	width: 32em;
+	color: #111;
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+}
+
+#links h1 {
+	color: #4682b4;
+	background-color: transparent;
+}
+
+#links > ul > li {
+	margin-bottom: 1em;
+}
+
+#links > ul > li {
+	font-weight: bold;
+	list-style-type: none;
+	margin-left: -1em;
+	color: #4682b4;
+	background-color: #f3f3f3;
+}
+
+#links li li {
+	font-weight: normal;
+}
+
+#links a {
+	color: #111;
+	background-color: transparent;
+}
+
+#links li li {
+	padding: .1em;
+}
+
+#links li li:hover {
+	color: #111;
+	background-color: #ddd;
+}
+
+#blogs {
+	float: right;
+	width: 16em;
+	color: #111;
+	background-color: #f3f3f3;
+	border: 1px solid #ddd;
+}
+
+#blogs li {
+	margin-bottom: .5em;
+	margin-left: -.5em;
+	line-height: 1.25em;	
+	padding: .25em;
+}
+
+#blogs li, 
+#blogs a {
+	color: #111;
+	background-color: transparent;
+	text-decoration: none;
+}
+
+#blogs li:hover {
+	background-color: #ddd;
+}
+
+#blogs cite {
+	text-decoration: underline;
+}
+
+#blogs blockquote {
+	font-weight: bold;
+}
+
