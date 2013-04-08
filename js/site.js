@@ -22,7 +22,7 @@ window.siteMgr = (function(window, document, undefined) {
         $nav.append($ul);
 
         $('#page > header').append($nav);
-    }
+    };
 
     siteMgr.createPageFooter = function() {
         var html = '<footer>' +
@@ -30,12 +30,12 @@ window.siteMgr = (function(window, document, undefined) {
                    '</footer>';
 
         $('#page').append($(html));
-    }
+    };
 
     siteMgr.setPageDefaults = function() {
         $('#page').addClass('box-shadow');
         $('#page').addClass('border-radius');
-    }
+    };
 
     siteMgr.disableLinksToCurrentPage = function (context) {
         var url = document.URL;
@@ -51,7 +51,7 @@ window.siteMgr = (function(window, document, undefined) {
                 $(this).attr('title', '');
             }
         });
-    }
+    };
 
     return siteMgr;
 
