@@ -64,12 +64,12 @@
 	border: 1px solid #aaa;
 	color: #444;
 	background-color: #f3f3f3;
-	padding: 1em;
+	padding: 2em;
 	margin-bottom: 1em;	
 }
 
-#twtr-widget-1 {
-	margin: 1em;
+#twitterbox h1 {
+    padding-bottom: 1em;
 }
 
 .rss-box {
@@ -90,14 +90,6 @@
 	margin: 1em 0 0 0;
 	font-size: 90%;
 	font-style: italic;	
-}
-
-
-div.twtr-hd .twtr-profile-img-anchor,
-div.twtr-hd h3,
-div.twtr-hd h4
-{
-	display: none;
 }
 
 .no-js #twitterbox,
