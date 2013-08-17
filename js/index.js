@@ -6,5 +6,5 @@ $(document).ready(function() {
 	$('#twitterbox').addClass('box-shadow');
 
 	$('<h1>Latest blog posts</h1>').insertBefore('#posts');
-	$('<h1>Latest tweets</h1>').insertBefore('#tweets');
+    $('<h1>Latest tweets</h1>').insertBefore('#tweets');
 });
