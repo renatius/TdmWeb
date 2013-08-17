@@ -164,3 +164,7 @@ pip-log.txt
 
 #WebStorm
 .idea/
+
+#TopStyle
+__history/
+
