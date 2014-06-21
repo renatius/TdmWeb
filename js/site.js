@@ -60,7 +60,7 @@ window.siteMgr = (function(window, document, undefined) {
 
 $(document).ready(function() {
     siteMgr.createHeaderNavBar();
-    siteMgr.createPageFooter();    
+    // siteMgr.createPageFooter();
     siteMgr.setPageDefaults();
     siteMgr.disableLinksToCurrentPage('nav');
 });

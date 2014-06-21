@@ -8,10 +8,10 @@ body {
 }
 
 #page {
-	padding: 4em;
-	margin: 0 auto 0 auto;
+	padding: 1.5em 2em;
+	margin: 0 auto;
 	width: 100%;
-	max-width: 50em;
+	max-width: 48em;
 }
 
 /* section defaults */
@@ -34,11 +34,20 @@ section ul {
 	margin-left: 2em;
 }
 
+section#highlights ul {
+    list-style: disc;
+    margin-left: 3em;
+}
+
 section a {
 	color: #111;
 	background-color: white;
 	text-decoration: none;	
-	border-bottom: 1px dashed #ccc;
+	border-bottom: 1px dashed #4682b4;
+}
+
+section#highlights a {
+    border-style: solid;
 }
 
 #contact_info {
@@ -46,7 +55,7 @@ section a {
 	line-height: 1.1em;
 }
 
-#contact_info a {
+#contact_info a[href="http://www.renatomancuso.com/"] {
 	font-weight: bold;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -54,6 +63,14 @@ section a {
 	background-color: transparent;
 	border: 0;
 }
+
+#contact_info a[href="https://twitter.com/renatius"] {
+    text-decoration: none;
+    color: #4682b4;
+    background-color: transparent;
+    border: 0;
+}
+
 
 #contact_info a.email {
 	font-style: normal;
@@ -104,3 +121,9 @@ section a {
 	margin: 0 0 .75em 0;
 }
 
+@media print {
+    body { margin: 0; padding: 0; }
+    #page { border: 0; width: 100%;}
+    footer { display: none; }
+    #work_experience { margin-top: 40px; }
+}
