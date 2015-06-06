@@ -8,8 +8,7 @@ window.siteMgr = (function(window, document, undefined) {
 
         var links = [
             { text: 'home', title: 'follow this link to go to the home page', href: 'index.htm' },
-            { text: 'links', title: 'follow this link to go to my collection of link', href: 'links.htm' },
-            { text: 'blog', title: 'follow this link to go to my Wordpress blog', href: 'http://renatomancuso.wordpress.com/' }
+            { text: 'links', title: 'follow this link to go to my collection of link', href: 'links.htm' }
         ];
 
         $.each(links, function(index, value) {
