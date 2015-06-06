@@ -1,7 +1,7 @@
 body { 
-	margin: 1em 1em 1em 1em;
+	margin: 10px;
 	color: #111; 
-	background-color: #ffdead;
+	background-color: #e2ecf3;
 	font-family: Georgia, serif;
 }
 
@@ -22,8 +22,8 @@ ol {
 }
 
 #page {
-	width: 54em;
-	margin: 0 auto 0 auto;
+	width: 960px;
+	margin: 0 auto;
 	padding: 2em;
 	color: #111; 
 	background-color: white; 

@@ -1,8 +1,10 @@
+/**
 .borderradius .border-radius {
 	-webkit-border-radius: 9px;
 	-moz-border-radius: 9px;
 	border-radius: 9px;
 }
+**/
 
 .boxshadow .box-shadow {
     -webkit-box-shadow: 3px 3px 3px rgba(6,6,6,.5);

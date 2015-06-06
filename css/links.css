@@ -21,7 +21,7 @@
 
 #links {
 	float: left;
-	width: 32em;
+	width: 560px;
 	color: #111;
 	background-color: #f3f3f3;
 	border: 1px solid #ddd;
@@ -64,7 +64,7 @@
 
 #blogs {
 	float: right;
-	width: 16em;
+	width: 300px;
 	color: #111;
 	background-color: #f3f3f3;
 	border: 1px solid #ddd;
