@@ -30,6 +30,12 @@ ol {
 	border: 1px solid #ddd;
 }
 
+#page:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
 #page > header h1 {
 	font-size: 180%;
 	color: #4682b4;
