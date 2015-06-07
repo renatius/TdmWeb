@@ -1,6 +1,17 @@
-body { 
-	margin: 10px;
-	color: #111; 
+html {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	color: #111;
 	background-color: #e2ecf3;
 	font-family: Georgia, serif;
 }
@@ -24,10 +35,16 @@ ol {
 #page {
 	width: 960px;
 	margin: 0 auto;
-	padding: 2em;
+	padding: 10px;
 	color: #111; 
 	background-color: white; 
 	border: 1px solid #ddd;
+}
+
+@media screen and (min-width: 981px) {
+	#page {
+		margin: 10px auto;
+	}
 }
 
 #page:after {
@@ -40,10 +57,11 @@ ol {
 	font-size: 180%;
 	color: #4682b4;
 	background-color: white;
+	text-align: center;
 }
 
 #page > header nav {
-	margin-top: 1em;
+	margin-top: 10px;
 	border: 1px solid  #d5d5d5;
 	color: #333;
 	background-color: #f3f3f3;
@@ -90,7 +108,7 @@ footer {
 	clear: both;
 	color: #888;
 	background-color: white;
-	margin-top: 2em;
+	margin-top: 10px;
 	border-top: 1px solid #aaa;
 	padding-top: .5em;
 	font-size: 75%;

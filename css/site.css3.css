@@ -1,20 +1,15 @@
-/**
-.borderradius .border-radius {
-	-webkit-border-radius: 9px;
-	-moz-border-radius: 9px;
-	border-radius: 9px;
-}
-**/
+@media screen and (min-width: 981px) {
 
-.boxshadow .box-shadow {
-    -webkit-box-shadow: 3px 3px 3px rgba(6,6,6,.5);
-    -moz-box-shadow: 3px 3px 3px rgba(6,6,6,.5);
-    box-shadow: 3px 3px 3px #666;
-    box-shadow: 3px 3px 3px rgba(6,6,6,.5);
+    .boxshadow .box-shadow {
+        -webkit-box-shadow: 3px 3px 3px rgba(6, 6, 6, .5);
+        -moz-box-shadow: 3px 3px 3px rgba(6, 6, 6, .5);
+        box-shadow: 3px 3px 3px #666;
+        box-shadow: 3px 3px 3px rgba(6, 6, 6, .5);
+    }
+
 }
 
 .textshadow .text-shadow {
-	 text-shadow: 2px 2px 2px #333;
-    text-shadow: 2px 2px 2px rgba(3,3,3,.5);
+    text-shadow: 2px 2px 2px #333;
+    text-shadow: 2px 2px 2px rgba(3, 3, 3, .5);
 }
-
