@@ -25,12 +25,13 @@
 
 #main_content #social {
 	margin-top: 1em;
+	text-align: center;
 }
 
 #main_content #linkedin,
 #main_content #resume {
 	float: left;
-	margin: 0 .5em .5em 0;
+	margin: 0 .5em .5em 6px;
 }
 
 #main_content #twitter {
@@ -39,6 +40,12 @@
 
 #main_content #csm_logo {
 	margin-top: .4em;
+	text-align:center;
+}
+
+#main_content #oracle_oca_logo {
+	margin-top: .4em;
+	text-align:center;
 }
 
 #main_content #bio {
